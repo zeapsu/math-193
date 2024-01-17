@@ -1,0 +1,56 @@
+\documentclass{article}
+	
+\usepackage[margin=1in]{geometry}		% For setting margins
+\usepackage{amsmath}				% For Math
+\usepackage[]{amssymb}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{fancyhdr}				% For fancy header/footer
+\usepackage{graphicx}				% For including figure/image
+\usepackage{cancel}					% To use the slash to cancel out stuff in work
+\usepackage{wasysym}                % For cent symbol
+\usepackage{needspace}              % To force item to next page
+\usepackage{mathtools}
+
+% math commands
+\newcommand{\ihat}{\;\hat{\textbf{\i}}}
+\newcommand{\jhat}{\;\hat{\textbf{\j}}}
+\newcommand{\khat}{\;\hat{\textbf{k}}}
+\newcommand{\rvec}{\vec{r}(t)}
+\newcommand{\drvec}{\vec{r}\;'(t)}
+\newcommand\vv[1]{\left\langle #1 \right\rangle}
+\newcommand\vc[2]{\vec{#1}(#2)}
+\newcommand\vcd[2]{\vec{#1}\;'(#2)}
+\newcommand\vcdd[2]{\vec{#1}\;''(#2)}
+\newcommand\vcddd[2]{\vec{#1}\;'''(#2)}
+\newcommand\mgv[1]{\|#1\|}
+\newcommand\mgvv[2]{\sqrt{\left(#1\right)^2 + \left(#2\right)^2}}
+\newcommand\mgvvv[3]{\sqrt{\left(#1\right)^2 + \left(#2\right)^2 + \left(#3\right)^2}}
+\newcommand\then{\quad\Rightarrow\quad}
+\newcommand{\limit}[4]{\lim_{(#1, #2) \to (#3, #4)}}
+\newcommand{\limi}[2]{\lim_{#1 \to #2}}
+\newcommand{\such}{\; | \;}
+\newcommand{\lh}{\overset{L'H}{=}}
+\newcommand{\solution}{\centerline{\textit{Solution}}}
+\newcommand{\pp}[2]{\displaystyle\frac{\partial #1}{\partial #2}}
+\newcommand{\dd}[2]{\displaystyle\frac{d #1}{d #2}}
+\newcommand{\spc}{\vspace{1em}\hrule\vspace{1em}}
+\newcommand{\bp}[1]{\left(#1\right)}
+\newcommand{\bb}[1]{\left[#1\right]}
+\newcommand{\also}{,\quad}
+
+% title
+\title{Example 7}
+\author{Andry Paez}
+\date{}
+\begin{document}
+\maketitle
+\begin{align*}
+    \intertext{Example 7}
+    &\int_0^{\frac{\pi}{4}} \sec^2{\theta}\tan\theta\;d\theta\;\bb{\text{Let
+    $u = \tan\theta \then du = \sec^2{\theta}\;d\theta$}} \\
+    &\int_0^{\frac{\pi}{4}} \sec^2{\theta}\tan\theta\;d\theta \then \int_0^1
+    u\;du = \frac{u^2} 2 \Big|_0^1 = \frac 1 2 
+\end{align*}
+\end{document}
+
